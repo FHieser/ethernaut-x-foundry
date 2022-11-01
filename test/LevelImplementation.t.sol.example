@@ -1,0 +1,22 @@
+pragma solidity ^0.8.10;
+
+import {LevelSetup} from "test/LevelSetup.sol";
+import {Level} from "src/BaseLevel.sol";
+
+import {Factory} from "";//@note Put the factory here
+
+contract LevelImplementation is LevelSetup {
+    Level level;
+
+    function setUp() override public {
+        super.setUp();
+        level  = new Factory();//@note Use the correct Factory here
+    }
+
+    function testLevelHack() 
+    createLevelContractAddress(level)
+    submitLevelAfterwards public {
+      
+        //@note Insert Solution here
+    }
+}
